@@ -50,7 +50,9 @@ const DataSection: React.FC<DataSectionProps> = ({ url }) => {
   };
   return (
     <div className="data-section">
-      <button onClick={handleRefresh}>Refresh</button>
+      <button className="refresh" onClick={handleRefresh}>
+        Refresh
+      </button>
       {loading && <p>Loading...</p>}
       {error && <p>{error}</p>}
       {data && <pre>{JSON.stringify(data, null, 2)}</pre>}

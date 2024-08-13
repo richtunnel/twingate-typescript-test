@@ -7,7 +7,7 @@ interface HeroSectionProps {
 const HeroSection: React.FC<HeroSectionProps> = ({ imageURI }) => {
   return (
     <div className="main-hero">
-      <img src={imageURI} alt="HeroImage" />
+      <img src={imageURI} alt="Image" />
     </div>
   );
 };

@@ -7,6 +7,10 @@
   pointer-events: none;
 }
 
+.border-gray {
+  border: 1px solid rgb(193, 190, 198);
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -28,6 +32,14 @@
   color: #61dafb;
 }
 
+.imageTemplate {
+  width: 100%;
+  max-width: 485px;
+  border-radius: 10px;
+  background: transparent !important;
+  box-shadow: 2px 3px 5px 0px #d9d9d9;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +47,98 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Center the hero image */
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.hero-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 2px 3px 5px 0px #d9d9d9;
+}
+
+/* Image-Text Section Layout */
+.image-text-section {
+  display: flex;
+  align-items: center;
+  margin: 6% 2%;
+  padding: 50px 41px;
+  border-radius: 12px;
+  background: #f7f7f7;
+  border: 1px solid #e1e1e1;
+}
+
+.image-text-section.ltr {
+  flex-direction: row;
+}
+
+.image-text-section.rtl {
+  flex-direction: row-reverse;
+}
+
+.image-text-img {
+  max-width: 45%;
+  margin-right: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 3px 5px 0px #d9d9d9;
+}
+
+.image-text-content {
+  flex: 1;
+}
+
+.main-hero {
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+/* Data Section */
+.data-section {
+  margin-top: 20px;
+  border-top: 1px solid #e1e1e1;
+  padding-top: 20px;
+  display: grid;
+  text-align: center;
+}
+.refresh {
+  width: 94%;
+  margin: 0 auto;
+  padding: 15px 0px;
+  background: #000;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.25rem;
+  border-radius: 14px;
+  cursor: pointer;
+}
+.app {
+  display: flex;
+  padding: 20px;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.add-json-div {
+  flex: 0 0 35%;
+  padding: 20px 30px;
+  max-height: 90vh;
+  min-height: 90vh;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.preview {
+  flex: 0 0 60%;
+  padding-left: 20px;
+  overflow-y: auto;
 }

@@ -6,12 +6,13 @@ type ImageTextSectionProps = {
   text: string;
   title?: string;
   leftToRight?: boolean;
+  className?: string;
 };
 
-const ImageTextSection: React.FC<ImageTextSectionProps> = ({ imageURI, text, title, leftToRight = true }) => {
+const ImageTextSection: React.FC<ImageTextSectionProps> = ({ imageURI, text, title, className, leftToRight = true }) => {
   return (
     <div className={`image-text-section ${leftToRight ? "ltr" : "rtl"}`}>
-      <img src={imageURI} alt={title} className="image-text-img" />
+      <img src={imageURI} alt={title} className={`${className} image-text-img`} />
       <div className="image-text-content">
         {title && <h2>{title}</h2>}
         <p>{text}</p>
